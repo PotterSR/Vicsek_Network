@@ -1,0 +1,42 @@
+# --- Data and figures (regenerate with the scripts) ---
+# a pattern without "/" matches in every folder, e.g. *.csv also catches Results/RUN1/r_mean_0.1.csv
+
+# simulation output: order parameter, adjacency matrices
+*.csv
+*.txt
+
+# figures
+*.png
+*.pdf
+
+# videos and animations
+*.mp4
+*.gif
+
+# notebooks
+*.ipynb
+
+# output folder written by run.jl
+results/
+
+
+# --- Cluster job logs (PBS/Torque: name.o<jobid>, name.e<jobid>) ---
+*.o[0-9]*
+*.e[0-9]*
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# --- Local Claude Code settings ---
+.claude/settings.local.json
